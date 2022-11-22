@@ -1,5 +1,7 @@
 const http = require('http');
 
+const user = require('./mocks/users');
+
 const server = http.createServer((request, response) => {
   console.log(`Request method: ${request.method} | Endpoint: ${request.url}`);
 
